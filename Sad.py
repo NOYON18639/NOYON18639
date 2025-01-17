@@ -139,10 +139,10 @@ if __name__ == '__main__':
         usage()
     while True:
         for i in range(int(thr)):
-            t = threading.Thread(target=dos)
+            t = threading.Thread(target=ddos)
             t.daemon = True
             t.start()
-            t2 = threading.Thread(target=dos2)
+            t2 = threading.Thread(target=ddos2)
             t2.daemon = True
             t2.start()
         start = time.time()
